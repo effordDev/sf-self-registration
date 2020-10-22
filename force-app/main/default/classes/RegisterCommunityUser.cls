@@ -104,7 +104,7 @@ public without sharing class RegisterCommunityUser {
             Profile communityProfile = [
                 SELECT Id, Name 
                 FROM Profile 
-                WHERE Name = 'Small Biz Non Profit Portal User' 
+                WHERE Name = 'PROFILE NAME HERE' 
                 LIMIT 1
             ];
 
