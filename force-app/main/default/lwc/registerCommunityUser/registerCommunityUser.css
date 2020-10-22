@@ -1,0 +1,18 @@
+.body {
+    padding: 0 1rem;
+}
+
+.error {
+    background-color: rgb(255, 195, 116);
+    color: rgb(122, 0, 0);
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+    border-radius: 5px
+}
+
+.slds-button_brand {
+    background-color: orange;
+    color: black; 
+    border-color: orange;
+}

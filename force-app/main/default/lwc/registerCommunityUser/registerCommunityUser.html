@@ -1,0 +1,153 @@
+<template>
+
+    <template if:true={isLoading}>
+
+
+        <lightning-spinner alternative-text="Loading"></lightning-spinner>
+
+
+    </template>
+
+    <lightning-card title={title} icon-name="action:add_contact">
+
+        <br />
+
+        <template if:true={error}>
+            <div class="error">
+                {error}
+            </div>
+        </template>
+
+        <br />
+
+        <div class="body">
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <lightning-input 
+                        onchange={setValues}
+                        required
+                        name="firstName" 
+                        type="text" 
+                        label="First Name"
+                        placeholder="First Name"
+                    ></lightning-input>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <lightning-input 
+                        required
+                        onchange={setValues} 
+                        type="text" 
+                        name="lastName" 
+                        placeholder="Last Name"
+                        label="Last Name"
+                    ></lightning-input>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <lightning-input 
+                        required
+                        onchange={setValues}
+                        onblur={validateEmail} 
+                        type="email" 
+                        name="email" 
+                        placeholder="Enter a valid email..."
+                        label="Email"
+                    ></lightning-input>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <lightning-input 
+                        required
+                        onchange={setValues}
+                        onblur={validateUsername} 
+                        type="email" 
+                        name="username" 
+                        placeholder="Enter a valid Username..."
+                        label="Username (Must be in format of email address)"
+                    ></lightning-input>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <lightning-input 
+                        onchange={setValues} 
+                        type="tel" 
+                        name="phone" 
+                        placeholder="Phone Number..."
+                        label="Phone"
+                    ></lightning-input>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <lightning-input 
+                        required
+                        onchange={setValues}
+                        type="text" 
+                        name="accountName" 
+                        placeholder="Business or Nonprofit Name”..."
+                        label="Business or Nonprofit Name"
+                    ></lightning-input>
+                </div>
+            </div>
+
+            <template if:false={includePasswordField}>
+                <br />
+            </template>
+
+            <template if:true={includePasswordField}>
+                
+                <lightning-input 
+                    required
+                    onchange={setValues}
+                    type="password" 
+                    name="password" 
+                    placeholder="Password..."
+                    label="Password"
+                ></lightning-input>
+
+                <lightning-input
+                    required 
+                    onchange={setValues}
+                    type="password" 
+                    name="confirmPassword" 
+                    placeholder="Confirm Password..."
+                    label="Confirm Password"
+                ></lightning-input> 
+
+                <u>Passwords must be at least <b>10 characters</b> and include at least <b>one letter</b> and <b>one number</b>.</u>
+
+                <br /> 
+
+            </template>
+
+            <br />
+
+            <div class="slds-col">
+                <span></span>
+            </div>
+
+        </div>
+
+        <div class="slds-align_absolute-center">
+            <lightning-button 
+                onclick={register}
+                slot="footer"
+                variant="brand"
+                label="Submit"
+                name="submitButton" 
+            ></lightning-button>
+        </div>
+
+    </lightning-card>
+</template>
