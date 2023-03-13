@@ -44,20 +44,20 @@ export default class RegisterCommunityUser extends LightningElement {
     }
     
     async register(event){
-        this.loading()
-        
-        console.log('register =>')
-
-        const config = this.getConfig()
-        // console.log(config)
-
         try {
+            this.loading()
+            
+            console.log('register =>')
+
+            const config = this.getConfig()
+            // console.log(config)
+
 
             const result = await registerUser({config})
 
             // console.log({result})
 
-            if(result.substring(0,5) === 'https'){
+            if (result.substring(0,5) === 'https'){
 
                 this.error = false
                 window.location.href = result
@@ -69,9 +69,10 @@ export default class RegisterCommunityUser extends LightningElement {
 
             }
 
-            this.loading()
         } catch (error) {
             console.log(error)
+        } finally {
+            this.loading()
         }
     }
 
