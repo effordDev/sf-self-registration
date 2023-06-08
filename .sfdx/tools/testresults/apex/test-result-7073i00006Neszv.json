@@ -1,0 +1,126 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 5,
+    "passing": 4,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "80%",
+    "failRate": "20%",
+    "skipRate": "0%",
+    "testStartTime": "Thu Jun 08 2023 1:33:49 PM",
+    "testExecutionTimeInMs": 420,
+    "testTotalTimeInMs": 420,
+    "commandTimeInMs": 252,
+    "hostname": "https://reidsdevorg2-dev-ed.my.salesforce.com",
+    "orgId": "00D3i000000F0TEEA0",
+    "username": "reidefford@gmail.com",
+    "testRunId": "7073i00006Neszv",
+    "userId": "0053i000000NtnzAAC"
+  },
+  "tests": [
+    {
+      "id": "07M3i000004zYGkEAM",
+      "queueItemId": "7093i0000001UXOAA2",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7073i00006NeszvAAB",
+      "methodName": "getPicklistValues_Test",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3i00000Astl7AAB",
+        "name": "RegisterCommunityUserTest",
+        "namespacePrefix": null,
+        "fullName": "RegisterCommunityUserTest"
+      },
+      "runTime": 332,
+      "testTimestamp": "2023-06-08T17:33:49.000+0000",
+      "fullName": "RegisterCommunityUserTest.getPicklistValues_Test"
+    },
+    {
+      "id": "07M3i000004zYGmEAM",
+      "queueItemId": "7093i0000001UXOAA2",
+      "stackTrace": "(System Code)\nClass.RegisterCommunityUser.validateEmailFormat: line 146, column 1\nClass.RegisterCommunityUser.register: line 40, column 1\nClass.RegisterCommunityUserTest.register_Test: line 86, column 1",
+      "message": "System.NullPointerException: Script-thrown exception",
+      "asyncApexJobId": "7073i00006NeszvAAB",
+      "methodName": "register_Test",
+      "outcome": "Fail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3i00000Astl7AAB",
+        "name": "RegisterCommunityUserTest",
+        "namespacePrefix": null,
+        "fullName": "RegisterCommunityUserTest"
+      },
+      "runTime": 64,
+      "testTimestamp": "2023-06-08T17:33:50.000+0000",
+      "fullName": "RegisterCommunityUserTest.register_Test",
+      "diagnostic": {
+        "exceptionMessage": "System.NullPointerException: Script-thrown exception",
+        "exceptionStackTrace": "(System Code)\nClass.RegisterCommunityUser.validateEmailFormat: line 146, column 1\nClass.RegisterCommunityUser.register: line 40, column 1\nClass.RegisterCommunityUserTest.register_Test: line 86, column 1",
+        "className": "RegisterCommunityUser",
+        "compileProblem": "",
+        "lineNumber": 146,
+        "columnNumber": 1
+      }
+    },
+    {
+      "id": "07M3i000004zYGnEAM",
+      "queueItemId": "7093i0000001UXOAA2",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7073i00006NeszvAAB",
+      "methodName": "siteAsContainerEnabled_Test",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3i00000Astl7AAB",
+        "name": "RegisterCommunityUserTest",
+        "namespacePrefix": null,
+        "fullName": "RegisterCommunityUserTest"
+      },
+      "runTime": 13,
+      "testTimestamp": "2023-06-08T17:33:50.000+0000",
+      "fullName": "RegisterCommunityUserTest.siteAsContainerEnabled_Test"
+    },
+    {
+      "id": "07M3i000004zYGoEAM",
+      "queueItemId": "7093i0000001UXOAA2",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7073i00006NeszvAAB",
+      "methodName": "validateEmailFormat_Test",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3i00000Astl7AAB",
+        "name": "RegisterCommunityUserTest",
+        "namespacePrefix": null,
+        "fullName": "RegisterCommunityUserTest"
+      },
+      "runTime": 5,
+      "testTimestamp": "2023-06-08T17:33:50.000+0000",
+      "fullName": "RegisterCommunityUserTest.validateEmailFormat_Test"
+    },
+    {
+      "id": "07M3i000004zYGlEAM",
+      "queueItemId": "7093i0000001UXOAA2",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7073i00006NeszvAAB",
+      "methodName": "isValidPassword_Test",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3i00000Astl7AAB",
+        "name": "RegisterCommunityUserTest",
+        "namespacePrefix": null,
+        "fullName": "RegisterCommunityUserTest"
+      },
+      "runTime": 6,
+      "testTimestamp": "2023-06-08T17:33:50.000+0000",
+      "fullName": "RegisterCommunityUserTest.isValidPassword_Test"
+    }
+  ]
+}

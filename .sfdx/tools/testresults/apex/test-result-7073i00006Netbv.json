@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Thu Jun 08 2023 1:40:57 PM",
+    "testExecutionTimeInMs": 550,
+    "testTotalTimeInMs": 550,
+    "commandTimeInMs": 246,
+    "hostname": "https://reidsdevorg2-dev-ed.my.salesforce.com",
+    "orgId": "00D3i000000F0TEEA0",
+    "username": "reidefford@gmail.com",
+    "testRunId": "7073i00006Netbv",
+    "userId": "0053i000000NtnzAAC"
+  },
+  "tests": [
+    {
+      "id": "07M3i000004zYGuEAM",
+      "queueItemId": "7093i0000001UXYAA2",
+      "stackTrace": "(System Code)\nClass.RegisterCommunityUser.register: line 129, column 1\nClass.RegisterCommunityUserTest.register_Test: line 80, column 1",
+      "message": "System.UnexpectedException: Salesforce System Error: 454887115-25754 (2079878091) (2079878091)",
+      "asyncApexJobId": "7073i00006NetbvAAB",
+      "methodName": "register_Test",
+      "outcome": "Fail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3i00000Astl7AAB",
+        "name": "RegisterCommunityUserTest",
+        "namespacePrefix": null,
+        "fullName": "RegisterCommunityUserTest"
+      },
+      "runTime": 550,
+      "testTimestamp": "2023-06-08T17:40:58.000+0000",
+      "fullName": "RegisterCommunityUserTest.register_Test",
+      "diagnostic": {
+        "exceptionMessage": "System.UnexpectedException: Salesforce System Error: 454887115-25754 (2079878091) (2079878091)",
+        "exceptionStackTrace": "(System Code)\nClass.RegisterCommunityUser.register: line 129, column 1\nClass.RegisterCommunityUserTest.register_Test: line 80, column 1",
+        "className": "RegisterCommunityUser",
+        "compileProblem": "",
+        "lineNumber": 129,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

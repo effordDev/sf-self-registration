@@ -2,9 +2,7 @@
 
     <template if:true={isLoading}>
 
-
         <lightning-spinner alternative-text="Loading"></lightning-spinner>
-
 
     </template>
 
@@ -66,12 +64,11 @@
                 <div class="slds-col">
                     <lightning-input 
                         required
-                        onchange={setValues}
-                        onblur={validateUsername} 
+                        disabled
+                        value={username} 
                         type="email" 
                         name="username" 
-                        placeholder="Enter a valid Username..."
-                        label="Username (Must be in format of email address)"
+                        label="Username"
                     ></lightning-input>
                 </div>
             </div>
@@ -95,8 +92,8 @@
                         onchange={setValues}
                         type="text" 
                         name="accountName" 
-                        placeholder="Business or Nonprofit Name”..."
-                        label="Business or Nonprofit Name"
+                        placeholder="Account Name..."
+                        label="Account Name"
                     ></lightning-input>
                 </div>
             </div>
@@ -105,31 +102,29 @@
                 <br />
             </template>
 
-            <template if:true={includePasswordField}>
+            <!-- <template if:true={includePasswordField}> -->
                 
-                <lightning-input 
-                    required
-                    onchange={setValues}
-                    type="password" 
-                    name="password" 
-                    placeholder="Password..."
-                    label="Password"
-                ></lightning-input>
+            <lightning-input 
+                required
+                onchange={setValues}
+                type="password" 
+                name="password" 
+                placeholder="Password..."
+                label="Password"
+            ></lightning-input>
 
-                <lightning-input
-                    required 
-                    onchange={setValues}
-                    type="password" 
-                    name="confirmPassword" 
-                    placeholder="Confirm Password..."
-                    label="Confirm Password"
-                ></lightning-input> 
+            <lightning-input
+                required 
+                onchange={setValues}
+                type="password" 
+                name="confirmPassword" 
+                placeholder="Confirm Password..."
+                label="Confirm Password"
+            ></lightning-input> 
 
-                <u>Passwords must be at least <b>10 characters</b> and include at least <b>one letter</b> and <b>one number</b>.</u>
+            <u>Passwords must be at least <b>10 characters</b> and include at least <b>one letter</b> and <b>one number</b>.</u>
 
-                <br /> 
-
-            </template>
+            <!-- </template> -->
 
             <br />
 

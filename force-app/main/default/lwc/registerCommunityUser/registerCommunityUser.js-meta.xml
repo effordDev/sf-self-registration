@@ -13,11 +13,33 @@
     </targets>
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage, lightning__AppPage, lightningCommunity__Default">
-            <property name="title" type="String" label="Title" description="Title for card" default="Register"/>
-            <property name="includePasswordField" type="Boolean" label="Include Password Field" description="Include a password field to have user set password." default="false"/>
-            <property name="searchAddressFields" type="Boolean" label="Show address search?" description="Ability to search and obtain a valid address (using Google Places API)" default="true"/>
-            <property name="editableAddressFields" type="Boolean" label="Show many editable Address fields?" description="In addition to searching for valid address, allow edits and show all fields." default="true"/>
-            <property name="startURL" type="String" label="Start URL" description="Enter the path to the page that users see after they log in like a home page for a community."/>
+            <property
+                name="ownerUsername"
+                type="String"
+                label="Owner Username"
+                description="Username of User that will be set as owner. Typically an Admin with a role."
+                required="true" 
+            />
+            <property
+                name="profileName"
+                type="String"
+                label="Profile Name"
+                required="true" 
+            />
+            <property 
+                name="usernamePostFix" 
+                type="String" 
+                label="Username Post-Fix" 
+                required="true" 
+                description="Trailing name to be appended to email to help ensure username uniqueness"
+            />
+            <property 
+                name="title" 
+                type="String" 
+                label="Title" 
+                description="Title for card" 
+                default="Register"
+            />
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

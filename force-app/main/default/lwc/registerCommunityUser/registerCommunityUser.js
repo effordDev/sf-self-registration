@@ -6,26 +6,28 @@ import registerUser from '@salesforce/apex/RegisterCommunityUser.register';
 import { 
     capitalize,
 } from './helper';
-//u2YsF219tfLbK%Uz4
 
 export default class RegisterCommunityUser extends LightningElement {
 
+    @api ownerUsername
+    @api profileName
     @api title
-    @api startURL
-    @api includePasswordField
-    @api searchAddressFields
-    @api editableAddressFields
+    @api usernamePostFix
 
-    @track accountName = ''
-    @track firstName = ''
-    @track lastName = ''
-    @track email = ''
-    @track username = ''
-    @track password = ''
-    @track confirmPassword = ''
+    accountName = ''
+    firstName = ''
+    lastName = ''
+    email = ''
+    
+    password = ''
+    confirmPassword = ''
 
-    @track error = false
-    @track isLoading = false
+    error = false
+    isLoading = false
+
+    get username() {
+        return `${this.email}.${this.usernamePostFix}`
+    }
 
     onkeyup( event ){
         //check for "enter" key
@@ -38,26 +40,37 @@ export default class RegisterCommunityUser extends LightningElement {
         
         const prop = event.target.name
         const value = event.target.value
-        //console.log(prop)
-        //console.log(value)
+
         this[prop] = value
     }
     
     async register(event){
+
+        const allValid = [
+            ...this.template.querySelectorAll('lightning-input'),
+        ].reduce((validSoFar, inputCmp) => {
+            inputCmp.reportValidity();
+            return validSoFar && inputCmp.checkValidity();
+        }, true);
+
+        if (!allValid) {
+            return
+        }
+
+        this.loading()
+        
+        console.log('register =>')
+
+        const config = this.getConfig()
+        // console.log(config)
+
         try {
-            this.loading()
-            
-            console.log('register =>')
-
-            const config = this.getConfig()
-            // console.log(config)
-
 
             const result = await registerUser({config})
 
             // console.log({result})
 
-            if (result.substring(0,5) === 'https'){
+            if(result.substring(0,5) === 'https'){
 
                 this.error = false
                 window.location.href = result
@@ -68,7 +81,6 @@ export default class RegisterCommunityUser extends LightningElement {
                 this.error = result
 
             }
-
         } catch (error) {
             console.log(error)
         } finally {
@@ -88,9 +100,8 @@ export default class RegisterCommunityUser extends LightningElement {
             password: this.password,
             confirmPassword: this.confirmPassword,
             language: '',
-            regConfirmUrl: '',
-            startUrl: '',
-            includePassword: this.includePasswordField,
+            profileName: this.profileName,
+            ownerUsername: this.ownerUsername
         }
     }
 
@@ -105,25 +116,6 @@ export default class RegisterCommunityUser extends LightningElement {
 
             // this.username = email
             this.email = email
-        
-		} else {
-            this.toast(
-                `Must be in 'example@example.com' format`,
-                'error'
-            )
-        }
-    }
-
-    validateUsername( event ){
-
-        const userName = event.target.value
-        
-		const filter = /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
-
-		if(String(userName).search(filter) != -1){
-
-            // this.username = email
-            this.username = userName
         
 		} else {
             this.toast(

@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Thu Jun 08 2023 1:32:37 PM",
+    "testExecutionTimeInMs": 0,
+    "testTotalTimeInMs": 0,
+    "commandTimeInMs": 246,
+    "hostname": "https://reidsdevorg2-dev-ed.my.salesforce.com",
+    "orgId": "00D3i000000F0TEEA0",
+    "username": "reidefford@gmail.com",
+    "testRunId": "7073i00006Nesx6",
+    "userId": "0053i000000NtnzAAC"
+  },
+  "tests": [
+    {
+      "id": "07M3i000004zYGfEAM",
+      "queueItemId": "7093i0000001UXJAA2",
+      "stackTrace": null,
+      "message": "line 67, column 63: Constructor not defined: [RegisterCommunityUser.RegistrationConfig].<Constructor>(String, String, String, String, String, String, String, String, String, String, String, Boolean)",
+      "asyncApexJobId": "7073i00006Nesx6AAB",
+      "methodName": "<compile>",
+      "outcome": "CompileFail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3i00000Astl7AAB",
+        "name": "RegisterCommunityUserTest",
+        "namespacePrefix": null,
+        "fullName": "RegisterCommunityUserTest"
+      },
+      "runTime": 0,
+      "testTimestamp": "2023-06-08T17:32:39.000+0000",
+      "fullName": "RegisterCommunityUserTest.<compile>",
+      "diagnostic": {
+        "exceptionMessage": "line 67, column 63: Constructor not defined: [RegisterCommunityUser.RegistrationConfig].<Constructor>(String, String, String, String, String, String, String, String, String, String, String, Boolean)",
+        "exceptionStackTrace": null,
+        "compileProblem": ""
+      }
+    }
+  ]
+}

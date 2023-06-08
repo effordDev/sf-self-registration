@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 1,
+    "passing": 1,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Thu Jun 08 2023 1:46:36 PM",
+    "testExecutionTimeInMs": 448,
+    "testTotalTimeInMs": 448,
+    "commandTimeInMs": 236,
+    "hostname": "https://reidsdevorg2-dev-ed.my.salesforce.com",
+    "orgId": "00D3i000000F0TEEA0",
+    "username": "reidefford@gmail.com",
+    "testRunId": "7073i00006Neth6",
+    "userId": "0053i000000NtnzAAC"
+  },
+  "tests": [
+    {
+      "id": "07M3i000004zYH9EAM",
+      "queueItemId": "7093i0000001UXnAAM",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7073i00006Neth6AAB",
+      "methodName": "register_Test",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3i00000Astl7AAB",
+        "name": "RegisterCommunityUserTest",
+        "namespacePrefix": null,
+        "fullName": "RegisterCommunityUserTest"
+      },
+      "runTime": 448,
+      "testTimestamp": "2023-06-08T17:46:36.000+0000",
+      "fullName": "RegisterCommunityUserTest.register_Test"
+    }
+  ]
+}

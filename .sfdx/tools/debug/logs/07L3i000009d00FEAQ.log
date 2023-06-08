@@ -1,0 +1,494 @@
+48.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,FINER;WAVE,INFO;WORKFLOW,INFO
+13:53:02.5 (5988446)|USER_INFO|[EXTERNAL]|0053i000000Ntnz|reidefford@gmail.com|(GMT-04:00) Eastern Daylight Time (America/New_York)|GMT-04:00
+13:53:02.5 (6097016)|EXECUTION_STARTED
+13:53:02.5 (6128638)|CODE_UNIT_STARTED|[EXTERNAL]|01p3i00000Astl7|RegisterCommunityUserTest.register_Test()
+13:53:02.5 (7823269)|HEAP_ALLOCATE|[79]|Bytes:3
+13:53:02.5 (8004120)|HEAP_ALLOCATE|[84]|Bytes:152
+13:53:02.5 (8040348)|HEAP_ALLOCATE|[399]|Bytes:408
+13:53:02.5 (8070977)|HEAP_ALLOCATE|[412]|Bytes:408
+13:53:02.5 (8103966)|HEAP_ALLOCATE|[520]|Bytes:48
+13:53:02.5 (8159551)|HEAP_ALLOCATE|[139]|Bytes:6
+13:53:02.5 (8184347)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:111
+13:53:02.5 (8238211)|METHOD_ENTRY|[2]|01p3i00000Astl7|RegisterCommunityUserTest.RegisterCommunityUserTest()
+13:53:02.5 (8255829)|STATEMENT_EXECUTE|[2]
+13:53:02.5 (8264580)|STATEMENT_EXECUTE|[2]
+13:53:02.5 (8306053)|HEAP_ALLOCATE|[52]|Bytes:5
+13:53:02.5 (8365181)|HEAP_ALLOCATE|[58]|Bytes:5
+13:53:02.5 (8380832)|HEAP_ALLOCATE|[66]|Bytes:7
+13:53:02.5 (9087816)|SYSTEM_MODE_ENTER|false
+13:53:02.5 (9124996)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+13:53:02.5 (9142050)|SYSTEM_MODE_EXIT|false
+13:53:02.5 (9173942)|METHOD_EXIT|[2]|RegisterCommunityUserTest
+13:53:02.5 (9260514)|SYSTEM_MODE_ENTER|false
+13:53:02.5 (9270097)|HEAP_ALLOCATE|[34]|Bytes:5
+13:53:02.5 (9277888)|STATEMENT_EXECUTE|[32]
+13:53:02.5 (9282353)|STATEMENT_EXECUTE|[34]
+13:53:02.5 (9289154)|HEAP_ALLOCATE|[34]|Bytes:7
+13:53:02.5 (9332761)|VARIABLE_SCOPE_BEGIN|[34]|accountName|String|false|false
+13:53:02.5 (9457559)|VARIABLE_ASSIGNMENT|[34]|accountName|"mr test"
+13:53:02.5 (9467585)|STATEMENT_EXECUTE|[35]
+13:53:02.5 (9472620)|HEAP_ALLOCATE|[35]|Bytes:4
+13:53:02.5 (9482522)|VARIABLE_SCOPE_BEGIN|[35]|firstname|String|false|false
+13:53:02.5 (9500605)|VARIABLE_ASSIGNMENT|[35]|firstname|"test"
+13:53:02.5 (9508547)|STATEMENT_EXECUTE|[36]
+13:53:02.5 (9514416)|VARIABLE_SCOPE_BEGIN|[36]|lastName|String|false|false
+13:53:02.5 (9530752)|VARIABLE_ASSIGNMENT|[36]|lastName|"test"
+13:53:02.5 (9538566)|STATEMENT_EXECUTE|[37]
+13:53:02.5 (9543900)|HEAP_ALLOCATE|[37]|Bytes:18
+13:53:02.5 (9552202)|VARIABLE_SCOPE_BEGIN|[37]|email|String|false|false
+13:53:02.5 (9570341)|VARIABLE_ASSIGNMENT|[37]|email|"test24142@test.com"
+13:53:02.5 (9577395)|STATEMENT_EXECUTE|[38]
+13:53:02.5 (9581936)|HEAP_ALLOCATE|[38]|Bytes:10
+13:53:02.5 (9589446)|VARIABLE_SCOPE_BEGIN|[38]|phone|String|false|false
+13:53:02.5 (9605959)|VARIABLE_ASSIGNMENT|[38]|phone|"5555555555"
+13:53:02.5 (9613299)|STATEMENT_EXECUTE|[39]
+13:53:02.5 (9617772)|HEAP_ALLOCATE|[39]|Bytes:18
+13:53:02.5 (9625731)|VARIABLE_SCOPE_BEGIN|[39]|username|String|false|false
+13:53:02.5 (9641948)|VARIABLE_ASSIGNMENT|[39]|username|"test41421@test.com"
+13:53:02.5 (9649234)|STATEMENT_EXECUTE|[40]
+13:53:02.5 (9653797)|HEAP_ALLOCATE|[40]|Bytes:17
+13:53:02.5 (9661315)|VARIABLE_SCOPE_BEGIN|[40]|password|String|false|false
+13:53:02.5 (9678741)|VARIABLE_ASSIGNMENT|[40]|password|"TestPasswaord123!"
+13:53:02.5 (9685739)|STATEMENT_EXECUTE|[41]
+13:53:02.5 (9691103)|VARIABLE_SCOPE_BEGIN|[41]|confirmPassword|String|false|false
+13:53:02.5 (9707097)|VARIABLE_ASSIGNMENT|[41]|confirmPassword|"TestPasswaord123!"
+13:53:02.5 (9714790)|STATEMENT_EXECUTE|[42]
+13:53:02.5 (9720627)|VARIABLE_SCOPE_BEGIN|[42]|language|String|false|false
+13:53:02.5 (9736893)|VARIABLE_ASSIGNMENT|[42]|language|""
+13:53:02.5 (9753242)|STATEMENT_EXECUTE|[43]
+13:53:02.5 (9757968)|HEAP_ALLOCATE|[43]|Bytes:29
+13:53:02.5 (9766007)|VARIABLE_SCOPE_BEGIN|[43]|profileName|String|false|false
+13:53:02.5 (9789428)|VARIABLE_ASSIGNMENT|[43]|profileName|"Customer Community L (9 more) ..."
+13:53:02.5 (9797115)|STATEMENT_EXECUTE|[44]
+13:53:02.5 (9801654)|HEAP_ALLOCATE|[44]|Bytes:20
+13:53:02.5 (9809376)|VARIABLE_SCOPE_BEGIN|[44]|ownerUsername|String|false|false
+13:53:02.5 (9828060)|VARIABLE_ASSIGNMENT|[44]|ownerUsername|"reidefford@gmail.com"
+13:53:02.5 (9835104)|STATEMENT_EXECUTE|[46]
+13:53:02.5 (12178626)|HEAP_ALLOCATE|[46]|Bytes:288
+13:53:02.5 (12203239)|HEAP_ALLOCATE|[46]|Bytes:51
+13:53:02.5 (12253032)|HEAP_ALLOCATE|[46]|Bytes:48
+13:53:02.5 (12377081)|CONSTRUCTOR_ENTRY|[46]|01p3i00000Astl6|<init>(String,String,String,String,String,String,String,String,String,String,String)|RegisterCommunityUser.RegistrationConfig
+13:53:02.5 (12466901)|VARIABLE_SCOPE_BEGIN|[199]|this|RegisterCommunityUser.RegistrationConfig|true|false
+13:53:02.5 (12650283)|VARIABLE_ASSIGNMENT|[199]|this|{}|0x40231c8d
+13:53:02.5 (12667500)|VARIABLE_SCOPE_BEGIN|[199]|p_accountName|String|false|false
+13:53:02.5 (12690113)|VARIABLE_ASSIGNMENT|[199]|p_accountName|"mr test"
+13:53:02.5 (12700778)|VARIABLE_SCOPE_BEGIN|[199]|p_firstname|String|false|false
+13:53:02.5 (12717199)|VARIABLE_ASSIGNMENT|[199]|p_firstname|"test"
+13:53:02.5 (12727619)|VARIABLE_SCOPE_BEGIN|[199]|p_lastName|String|false|false
+13:53:02.5 (12754416)|VARIABLE_ASSIGNMENT|[199]|p_lastName|"test"
+13:53:02.5 (12764259)|VARIABLE_SCOPE_BEGIN|[199]|p_email|String|false|false
+13:53:02.5 (12782731)|VARIABLE_ASSIGNMENT|[199]|p_email|"test24142@test.com"
+13:53:02.5 (12793071)|VARIABLE_SCOPE_BEGIN|[199]|p_phone|String|false|false
+13:53:02.5 (12810046)|VARIABLE_ASSIGNMENT|[199]|p_phone|"5555555555"
+13:53:02.5 (12819881)|VARIABLE_SCOPE_BEGIN|[199]|p_username|String|false|false
+13:53:02.5 (12836785)|VARIABLE_ASSIGNMENT|[199]|p_username|"test41421@test.com"
+13:53:02.5 (12846503)|VARIABLE_SCOPE_BEGIN|[199]|p_password|String|false|false
+13:53:02.5 (12869647)|VARIABLE_ASSIGNMENT|[199]|p_password|"TestPasswaord123!"
+13:53:02.5 (12879599)|VARIABLE_SCOPE_BEGIN|[199]|p_confirmPassword|String|false|false
+13:53:02.5 (12895644)|VARIABLE_ASSIGNMENT|[199]|p_confirmPassword|"TestPasswaord123!"
+13:53:02.5 (12905106)|VARIABLE_SCOPE_BEGIN|[199]|p_language|String|false|false
+13:53:02.5 (12920881)|VARIABLE_ASSIGNMENT|[199]|p_language|""
+13:53:02.5 (12930441)|VARIABLE_SCOPE_BEGIN|[199]|p_profileName|String|false|false
+13:53:02.5 (12949603)|VARIABLE_ASSIGNMENT|[199]|p_profileName|"Customer Community L (9 more) ..."
+13:53:02.5 (12959696)|VARIABLE_SCOPE_BEGIN|[199]|p_ownerUsername|String|false|false
+13:53:02.5 (12976479)|VARIABLE_ASSIGNMENT|[199]|p_ownerUsername|"reidefford@gmail.com"
+13:53:02.5 (12996229)|STATEMENT_EXECUTE|[173]
+13:53:02.5 (13000269)|STATEMENT_EXECUTE|[175]
+13:53:02.5 (13005404)|STATEMENT_EXECUTE|[177]
+13:53:02.5 (13009157)|STATEMENT_EXECUTE|[179]
+13:53:02.5 (13012871)|STATEMENT_EXECUTE|[181]
+13:53:02.5 (13016408)|STATEMENT_EXECUTE|[183]
+13:53:02.5 (13020375)|STATEMENT_EXECUTE|[185]
+13:53:02.5 (13024137)|STATEMENT_EXECUTE|[187]
+13:53:02.5 (13027655)|STATEMENT_EXECUTE|[189]
+13:53:02.5 (13031746)|STATEMENT_EXECUTE|[191]
+13:53:02.5 (13035870)|STATEMENT_EXECUTE|[193]
+13:53:02.5 (13039774)|STATEMENT_EXECUTE|[195]
+13:53:02.5 (13053248)|HEAP_ALLOCATE|[212]|Bytes:6
+13:53:02.5 (14560363)|STATEMENT_EXECUTE|[211]
+13:53:02.5 (14568350)|STATEMENT_EXECUTE|[212]
+13:53:02.5 (14817260)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x40231c8d
+13:53:02.5 (14857975)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"mr test"
+13:53:02.5 (14890548)|VARIABLE_ASSIGNMENT|[175]|this.accountName|"mr test"|0x40231c8d
+13:53:02.5 (14921077)|STATEMENT_EXECUTE|[213]
+13:53:02.5 (15026095)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test"}|0x40231c8d
+13:53:02.5 (15045519)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"test"
+13:53:02.5 (15058365)|VARIABLE_ASSIGNMENT|[177]|this.firstname|"test"|0x40231c8d
+13:53:02.5 (15071590)|STATEMENT_EXECUTE|[214]
+13:53:02.5 (15126842)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","firstname":"test"}|0x40231c8d
+13:53:02.5 (15142388)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"test"
+13:53:02.5 (15153328)|VARIABLE_ASSIGNMENT|[179]|this.lastName|"test"|0x40231c8d
+13:53:02.5 (15164260)|STATEMENT_EXECUTE|[215]
+13:53:02.5 (15214124)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","firstname":"test","lastName":"test"}|0x40231c8d
+13:53:02.5 (15238999)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"test24142@test.com"
+13:53:02.5 (15255257)|VARIABLE_ASSIGNMENT|[181]|this.email|"test24142@test.com"|0x40231c8d
+13:53:02.5 (15270533)|STATEMENT_EXECUTE|[216]
+13:53:02.5 (15345861)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","email":"test24142@test.com","firstname":"test","lastName":"test"}|0x40231c8d
+13:53:02.5 (15369934)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"5555555555"
+13:53:02.5 (15386879)|VARIABLE_ASSIGNMENT|[183]|this.phone|"5555555555"|0x40231c8d
+13:53:02.5 (15404438)|STATEMENT_EXECUTE|[217]
+13:53:02.5 (15489153)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","email":"test24142@test.com","firstname":"test","lastName":"test","phone":"5555555555"}|0x40231c8d
+13:53:02.5 (15517848)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"test41421@test.com"
+13:53:02.5 (15531630)|VARIABLE_ASSIGNMENT|[185]|this.username|"test41421@test.com"|0x40231c8d
+13:53:02.5 (15545122)|STATEMENT_EXECUTE|[218]
+13:53:02.5 (15608952)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","email":"test24142@test.com","firstname":"test","lastName":"test","phone":"5555555555","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (15626974)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"TestPasswaord123!"
+13:53:02.5 (15638451)|VARIABLE_ASSIGNMENT|[187]|this.password|"TestPasswaord123!"|0x40231c8d
+13:53:02.5 (15649199)|STATEMENT_EXECUTE|[219]
+13:53:02.5 (15701956)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","email":"test24142@test.com","firstname":"test","lastName":"test","password":"TestPasswaord123!","phone":"5555555555","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (15717708)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"TestPasswaord123!"
+13:53:02.5 (15728456)|VARIABLE_ASSIGNMENT|[189]|this.confirmPassword|"TestPasswaord123!"|0x40231c8d
+13:53:02.5 (15745084)|STATEMENT_EXECUTE|[220]
+13:53:02.5 (15819436)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","lastName":"test","password":"TestPasswaord123!","phone":"5555555555","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (15844318)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|""
+13:53:02.5 (15858921)|VARIABLE_ASSIGNMENT|[191]|this.language|""|0x40231c8d
+13:53:02.5 (15876105)|STATEMENT_EXECUTE|[221]
+13:53:02.5 (15980010)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","password":"TestPasswaord123!","phone":"5555555555","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (16018065)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"Customer Community L (9 more) ..."
+13:53:02.5 (16036169)|VARIABLE_ASSIGNMENT|[193]|this.profileName|"Customer Community L (9 more) ..."|0x40231c8d
+13:53:02.5 (16050032)|STATEMENT_EXECUTE|[222]
+13:53:02.5 (16122138)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (16154946)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"reidefford@gmail.com"
+13:53:02.5 (16171805)|VARIABLE_ASSIGNMENT|[195]|this.ownerUsername|"reidefford@gmail.com"|0x40231c8d
+13:53:02.5 (16228198)|CONSTRUCTOR_EXIT|[46]|01p3i00000Astl6|<init>(String,String,String,String,String,String,String,String,String,String,String)|RegisterCommunityUser.RegistrationConfig
+13:53:02.5 (16247182)|VARIABLE_SCOPE_BEGIN|[46]|config|RegisterCommunityUser.RegistrationConfig|true|false
+13:53:02.5 (16310426)|VARIABLE_ASSIGNMENT|[46]|config|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (16323868)|STATEMENT_EXECUTE|[60]
+13:53:02.5 (16478517)|USER_DEBUG|[60]|DEBUG|RegistrationConfig:[accountName=mr test, confirmPassword=TestPasswaord123!, email=test24142@test.com, firstname=test, language=, lastName=test, ownerUsername=reidefford@gmail.com, password=TestPasswaord123!, phone=5555555555, profileName=Customer Community Login User, username=test41421@test.com]
+13:53:02.5 (16502991)|STATEMENT_EXECUTE|[62]
+13:53:02.5 (19915009)|HEAP_ALLOCATE|[62]|Bytes:18
+13:53:02.5 (19939582)|HEAP_ALLOCATE|[62]|Bytes:18
+13:53:02.5 (19962703)|HEAP_ALLOCATE|[62]|Bytes:5
+13:53:02.5 (20021380)|METHOD_ENTRY|[1]|01p3i00000Astl6|RegisterCommunityUser.RegisterCommunityUser()
+13:53:02.5 (20032398)|STATEMENT_EXECUTE|[1]
+13:53:02.5 (20038921)|STATEMENT_EXECUTE|[1]
+13:53:02.5 (20053877)|SYSTEM_MODE_ENTER|true
+13:53:02.5 (20066544)|HEAP_ALLOCATE|[62]|Bytes:5
+13:53:02.5 (20071769)|STATEMENT_EXECUTE|[173]
+13:53:02.5 (20080931)|SYSTEM_MODE_EXIT|true
+13:53:02.5 (20105273)|METHOD_EXIT|[1]|RegisterCommunityUser
+13:53:02.5 (20176638)|METHOD_ENTRY|[62]|01p3i00000Astl6|RegisterCommunityUser.register(RegisterCommunityUser.RegistrationConfig)
+13:53:02.5 (20242225)|VARIABLE_SCOPE_BEGIN|[38]|config|RegisterCommunityUser.RegistrationConfig|true|false
+13:53:02.5 (20329318)|VARIABLE_ASSIGNMENT|[38]|config|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (20368192)|SYSTEM_MODE_ENTER|true
+13:53:02.5 (20380075)|HEAP_ALLOCATE|[40]|Bytes:5
+13:53:02.5 (20400516)|STATEMENT_EXECUTE|[38]
+13:53:02.5 (20510872)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (20543238)|METHOD_ENTRY|[40]|01p3i00000Astl6|RegisterCommunityUser.validateEmailFormat(String)
+13:53:02.5 (20558782)|VARIABLE_SCOPE_BEGIN|[157]|email|String|false|false
+13:53:02.5 (20572620)|VARIABLE_ASSIGNMENT|[157]|email|"test24142@test.com"
+13:53:02.5 (20588953)|HEAP_ALLOCATE|[158]|Bytes:5
+13:53:02.5 (20594559)|STATEMENT_EXECUTE|[157]
+13:53:02.5 (20597484)|STATEMENT_EXECUTE|[158]
+13:53:02.5 (20606655)|VARIABLE_SCOPE_BEGIN|[158]|res|Boolean|false|false
+13:53:02.5 (20616314)|HEAP_ALLOCATE|[158]|Bytes:5
+13:53:02.5 (20627101)|VARIABLE_ASSIGNMENT|[158]|res|true
+13:53:02.5 (20632446)|STATEMENT_EXECUTE|[159]
+13:53:02.5 (20638250)|HEAP_ALLOCATE|[159]|Bytes:65
+13:53:02.5 (20644961)|VARIABLE_SCOPE_BEGIN|[159]|emailRegex|String|false|false
+13:53:02.5 (20659810)|VARIABLE_ASSIGNMENT|[159]|emailRegex|"^[a-zA-Z0-9._&#124;\\\\%#~` (45 more) ..."
+13:53:02.5 (20666837)|STATEMENT_EXECUTE|[160]
+13:53:02.5 (20730978)|HEAP_ALLOCATE|[160]|Bytes:24
+13:53:02.5 (20769353)|SYSTEM_METHOD_ENTRY|[1]|Pattern.Pattern()
+13:53:02.5 (20775213)|STATEMENT_EXECUTE|[1]
+13:53:02.5 (20788198)|SYSTEM_METHOD_EXIT|[1]|Pattern
+13:53:02.5 (20807328)|METHOD_ENTRY|[160]||System.Pattern.compile(String)
+13:53:02.5 (21028506)|METHOD_EXIT|[160]||System.Pattern.compile(String)
+13:53:02.5 (21041633)|VARIABLE_SCOPE_BEGIN|[160]|MyPattern|System.Pattern|true|false
+13:53:02.5 (21095847)|VARIABLE_ASSIGNMENT|[160]|MyPattern|{"delegate":"0x6ff2da83"}|0x3f2d111c
+13:53:02.5 (21104005)|STATEMENT_EXECUTE|[161]
+13:53:02.5 (21115978)|METHOD_ENTRY|[161]||System.Pattern.matcher(String)
+13:53:02.5 (21376235)|METHOD_EXIT|[161]||System.Pattern.matcher(String)
+13:53:02.5 (21387748)|VARIABLE_SCOPE_BEGIN|[161]|MyMatcher|System.Matcher|true|false
+13:53:02.5 (21421264)|VARIABLE_ASSIGNMENT|[161]|MyMatcher|{"delegate":"0x2d379626"}|0x54e867c1
+13:53:02.5 (21442213)|METHOD_ENTRY|[162]||System.Matcher.matches()
+13:53:02.5 (21533617)|METHOD_EXIT|[162]||System.Matcher.matches()
+13:53:02.5 (21544667)|STATEMENT_EXECUTE|[162]
+13:53:02.5 (21547788)|STATEMENT_EXECUTE|[164]
+13:53:02.5 (21553947)|HEAP_ALLOCATE|[164]|Bytes:5
+13:53:02.5 (21566547)|METHOD_EXIT|[40]|01p3i00000Astl6|RegisterCommunityUser.validateEmailFormat(String)
+13:53:02.5 (21574694)|STATEMENT_EXECUTE|[40]
+13:53:02.5 (21650978)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (21676720)|METHOD_ENTRY|[44]|01p3i00000Astl6|RegisterCommunityUser.validateUsernameNotDuplicate(String)
+13:53:02.5 (21687104)|VARIABLE_SCOPE_BEGIN|[167]|username|String|false|false
+13:53:02.5 (21700548)|VARIABLE_ASSIGNMENT|[167]|username|"test41421@test.com"
+13:53:02.5 (21722135)|HEAP_ALLOCATE|[168]|Bytes:5
+13:53:02.5 (21728057)|STATEMENT_EXECUTE|[167]
+13:53:02.5 (21730752)|STATEMENT_EXECUTE|[168]
+13:53:02.5 (21735304)|HEAP_ALLOCATE|[168]|Bytes:51
+13:53:02.5 (21762365)|HEAP_ALLOCATE|[168]|Bytes:4
+13:53:02.5 (21776951)|HEAP_ALLOCATE|[168]|Bytes:7
+13:53:02.5 (22142281)|SOQL_EXECUTE_BEGIN|[168]|Aggregations:0|SELECT Id, Name FROM User WHERE Username = :tmpVar1
+13:53:02.5 (29388312)|SOQL_EXECUTE_END|[168]|Rows:0
+13:53:02.5 (29441895)|HEAP_ALLOCATE|[168]|Bytes:4
+13:53:02.5 (29471820)|HEAP_ALLOCATE|[168]|Bytes:0
+13:53:02.5 (29610713)|HEAP_ALLOCATE|[168]|Bytes:4
+13:53:02.5 (29765405)|VARIABLE_SCOPE_BEGIN|[168]|userList|List<User>|true|false
+13:53:02.5 (29808761)|VARIABLE_ASSIGNMENT|[168]|userList|[]|0x335e0d16
+13:53:02.5 (29818777)|STATEMENT_EXECUTE|[169]
+13:53:02.5 (29938160)|HEAP_ALLOCATE|[169]|Bytes:5
+13:53:02.5 (29957049)|METHOD_EXIT|[44]|01p3i00000Astl6|RegisterCommunityUser.validateUsernameNotDuplicate(String)
+13:53:02.5 (29967895)|STATEMENT_EXECUTE|[44]
+13:53:02.5 (30088031)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (30158183)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (30215547)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (30248788)|HEAP_ALLOCATE|[48]|Bytes:1
+13:53:02.5 (30309921)|HEAP_ALLOCATE|[48]|Bytes:9
+13:53:02.5 (30348267)|STATEMENT_EXECUTE|[48]
+13:53:02.5 (30351401)|STATEMENT_EXECUTE|[52]
+13:53:02.5 (30843359)|SAVEPOINT_SET|[52]|SavepointValue0
+13:53:02.5 (30879793)|HEAP_ALLOCATE|[52]|Bytes:16
+13:53:02.5 (30920504)|VARIABLE_SCOPE_BEGIN|[52]|sp|System.Savepoint|true|false
+13:53:02.5 (31223371)|VARIABLE_ASSIGNMENT|[52]|sp|"common.apex.runtime.impl.ApexUserSavepoint@60834547"|0x60834547
+13:53:02.5 (31239682)|STATEMENT_EXECUTE|[54]
+13:53:02.5 (31242970)|STATEMENT_EXECUTE|[54]
+13:53:02.5 (31245765)|STATEMENT_EXECUTE|[56]
+13:53:02.5 (31281161)|VARIABLE_SCOPE_BEGIN|[56]|owner|User|true|false
+13:53:02.5 (31299074)|VARIABLE_ASSIGNMENT|[56]|owner|null|
+13:53:02.5 (31361831)|HEAP_ALLOCATE|[58]|Bytes:94
+13:53:02.5 (31395357)|SYSTEM_METHOD_ENTRY|[1]|Test.Test()
+13:53:02.5 (31404867)|STATEMENT_EXECUTE|[1]
+13:53:02.5 (31424097)|SYSTEM_METHOD_EXIT|[1]|Test
+13:53:02.5 (31459905)|METHOD_ENTRY|[58]||System.Test.isRunningTest()
+13:53:02.5 (31517148)|METHOD_EXIT|[58]||System.Test.isRunningTest()
+13:53:02.5 (31524620)|STATEMENT_EXECUTE|[58]
+13:53:02.5 (31527513)|STATEMENT_EXECUTE|[59]
+13:53:02.5 (31533432)|HEAP_ALLOCATE|[59]|Bytes:116
+13:53:02.5 (31557410)|HEAP_ALLOCATE|[59]|Bytes:4
+13:53:02.5 (32240560)|SOQL_EXECUTE_BEGIN|[59]|Aggregations:0|SELECT Id FROM User WHERE (Profile.Name = 'System Administrator' AND UserRoleId != NULL AND IsActive = TRUE) LIMIT 1
+13:53:02.5 (39940767)|SOQL_EXECUTE_END|[59]|Rows:1
+13:53:02.5 (39993094)|HEAP_ALLOCATE|[59]|Bytes:8
+13:53:02.5 (40048039)|HEAP_ALLOCATE|[59]|Bytes:60
+13:53:02.5 (40090587)|HEAP_ALLOCATE|[59]|Bytes:8
+13:53:02.5 (40111262)|HEAP_ALLOCATE|[59]|Bytes:30
+13:53:02.5 (40148943)|HEAP_ALLOCATE|[59]|Bytes:12
+13:53:02.5 (40203896)|VARIABLE_ASSIGNMENT|[59]|owner|{"Id":"0053i000000NtnzAAC","ProfileId":"00e3i0000014w6WAAQ"}|0x432ffb1d
+13:53:02.5 (40218947)|STATEMENT_EXECUTE|[76]
+13:53:02.5 (40224111)|HEAP_ALLOCATE|[76]|Bytes:58
+13:53:02.5 (40240150)|HEAP_ALLOCATE|[76]|Bytes:4
+13:53:02.5 (40388345)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (40697000)|SOQL_EXECUTE_BEGIN|[76]|Aggregations:0|SELECT Id, Name FROM Profile WHERE Name = :tmpVar1 LIMIT 1
+13:53:02.5 (44577546)|SOQL_EXECUTE_END|[76]|Rows:1
+13:53:02.5 (44634726)|HEAP_ALLOCATE|[76]|Bytes:8
+13:53:02.5 (44682639)|HEAP_ALLOCATE|[76]|Bytes:66
+13:53:02.5 (44792753)|HEAP_ALLOCATE|[76]|Bytes:8
+13:53:02.5 (44817197)|HEAP_ALLOCATE|[76]|Bytes:33
+13:53:02.5 (44906092)|HEAP_ALLOCATE|[76]|Bytes:12
+13:53:02.5 (44950464)|VARIABLE_SCOPE_BEGIN|[76]|communityProfile|Profile|true|false
+13:53:02.5 (45001610)|VARIABLE_ASSIGNMENT|[76]|communityProfile|{"Id":"00e3i0000014w6eAAA","Name":"Customer Community L (9 more) ..."}|0x29cf2b67
+13:53:02.5 (45017585)|STATEMENT_EXECUTE|[83]
+13:53:02.5 (45145824)|USER_DEBUG|[83]|DEBUG|RegistrationConfig:[accountName=mr test, confirmPassword=TestPasswaord123!, email=test24142@test.com, firstname=test, language=, lastName=test, ownerUsername=reidefford@gmail.com, password=TestPasswaord123!, phone=5555555555, profileName=Customer Community Login User, username=test41421@test.com]
+13:53:02.5 (45163880)|STATEMENT_EXECUTE|[85]
+13:53:02.5 (45215846)|HEAP_ALLOCATE|[85]|Bytes:4
+13:53:02.5 (45506417)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (45627046)|VARIABLE_ASSIGNMENT|[85]|this.Name|"mr test"|0x5b080edb
+13:53:02.5 (45694669)|VARIABLE_ASSIGNMENT|[85]|this.OwnerId|"0053i000000NtnzAAC"|0x5b080edb
+13:53:02.5 (45749646)|VARIABLE_SCOPE_BEGIN|[85]|a|Account|true|false
+13:53:02.5 (45781130)|VARIABLE_ASSIGNMENT|[85]|a|{"Name":"mr test","OwnerId":"0053i000000NtnzAAC"}|0x5b080edb
+13:53:02.5 (45789417)|STATEMENT_EXECUTE|[90]
+13:53:02.5 (45849692)|HEAP_ALLOCATE|[90]|Bytes:8
+13:53:02.5 (45879677)|DML_BEGIN|[90]|Op:Insert|Type:Account|Rows:1
+13:53:02.5 (45948995)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:53:02.5 (145949459)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+13:53:02.5 (145988354)|DUPLICATE_DETECTION_BEGIN
+13:53:02.5 (149785182)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm3i000001MF2H|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+13:53:02.5 (228384033)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Account|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+13:53:02.5 (228443772)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Account|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+13:53:02.5 (228726630)|DUPLICATE_DETECTION_END
+13:53:02.5 (228757534)|CODE_UNIT_FINISHED|DuplicateDetector
+13:53:02.5 (276129445)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Account
+13:53:02.5 (276217504)|CODE_UNIT_FINISHED|Workflow:Account
+13:53:02.5 (289600876)|DML_END|[90]
+13:53:02.5 (289653345)|STATEMENT_EXECUTE|[91]
+13:53:02.5 (289794623)|USER_DEBUG|[91]|DEBUG|Account:{Name=mr test, OwnerId=0053i000000NtnzAAC, Id=0013i00003b1WmeAAE}
+13:53:02.5 (289821558)|STATEMENT_EXECUTE|[93]
+13:53:02.5 (289874388)|HEAP_ALLOCATE|[93]|Bytes:4
+13:53:02.5 (290038646)|VARIABLE_SCOPE_BEGIN|[93]|c|Contact|true|false
+13:53:02.5 (290079088)|VARIABLE_ASSIGNMENT|[93]|c|{}|0x39dd3efb
+13:53:02.5 (290086995)|STATEMENT_EXECUTE|[94]
+13:53:02.5 (292370336)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (292525407)|VARIABLE_ASSIGNMENT|[94]|this.FirstName|"test"|0x39dd3efb
+13:53:02.5 (292536118)|STATEMENT_EXECUTE|[95]
+13:53:02.5 (292629327)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (292685996)|VARIABLE_ASSIGNMENT|[95]|this.LastName|"test"|0x39dd3efb
+13:53:02.5 (292694095)|STATEMENT_EXECUTE|[96]
+13:53:02.5 (292772131)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (292826119)|VARIABLE_ASSIGNMENT|[96]|this.Phone|"5555555555"|0x39dd3efb
+13:53:02.5 (292833631)|STATEMENT_EXECUTE|[97]
+13:53:02.5 (292886119)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (292931639)|VARIABLE_ASSIGNMENT|[97]|this.MobilePhone|"5555555555"|0x39dd3efb
+13:53:02.5 (292939040)|STATEMENT_EXECUTE|[98]
+13:53:02.5 (292989683)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (293031983)|VARIABLE_ASSIGNMENT|[98]|this.Email|"test24142@test.com"|0x39dd3efb
+13:53:02.5 (293040088)|STATEMENT_EXECUTE|[99]
+13:53:02.5 (293094078)|VARIABLE_ASSIGNMENT|[99]|this.AccountId|"0013i00003b1WmeAAE"|0x39dd3efb
+13:53:02.5 (293101283)|STATEMENT_EXECUTE|[100]
+13:53:02.5 (293134839)|VARIABLE_ASSIGNMENT|[100]|this.OwnerId|"0053i000000NtnzAAC"|0x39dd3efb
+13:53:02.5 (293141673)|STATEMENT_EXECUTE|[101]
+13:53:02.5 (293212248)|HEAP_ALLOCATE|[101]|Bytes:8
+13:53:02.5 (293239216)|DML_BEGIN|[101]|Op:Insert|Type:Contact|Rows:1
+13:53:02.5 (293305687)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:53:02.5 (328389920)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+13:53:02.5 (328422942)|DUPLICATE_DETECTION_BEGIN
+13:53:02.5 (328575197)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm3i000001MF2I|DuplicateRuleName:Standard Contact Duplicate Rule|DmlType:INSERT
+13:53:02.5 (404903559)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+13:53:02.5 (404935285)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+13:53:02.5 (404960330)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+13:53:02.5 (404975967)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+13:53:02.5 (405217437)|DUPLICATE_DETECTION_END
+13:53:02.5 (405235571)|CODE_UNIT_FINISHED|DuplicateDetector
+13:53:02.5 (441996905)|DML_END|[101]
+13:53:02.5 (442048649)|STATEMENT_EXECUTE|[104]
+13:53:02.5 (442085982)|HEAP_ALLOCATE|[104]|Bytes:4
+13:53:02.5 (442344027)|VARIABLE_SCOPE_BEGIN|[104]|u|User|true|false
+13:53:02.5 (442403758)|VARIABLE_ASSIGNMENT|[104]|u|{}|0x344a8729
+13:53:02.5 (442419125)|STATEMENT_EXECUTE|[105]
+13:53:02.5 (442596105)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (442734698)|VARIABLE_ASSIGNMENT|[105]|this.Email|"test24142@test.com"|0x344a8729
+13:53:02.5 (442756149)|STATEMENT_EXECUTE|[106]
+13:53:02.5 (442857103)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (442940019)|VARIABLE_ASSIGNMENT|[106]|this.FirstName|"test"|0x344a8729
+13:53:02.5 (442948498)|STATEMENT_EXECUTE|[107]
+13:53:02.5 (443016492)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (443068124)|VARIABLE_ASSIGNMENT|[107]|this.LastName|"test"|0x344a8729
+13:53:02.5 (443075967)|STATEMENT_EXECUTE|[108]
+13:53:02.5 (443130934)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (443192123)|VARIABLE_ASSIGNMENT|[108]|this.Username|"test41421@test.com"|0x344a8729
+13:53:02.5 (443200555)|STATEMENT_EXECUTE|[109]
+13:53:02.5 (443254800)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (443301749)|VARIABLE_ASSIGNMENT|[109]|this.MobilePhone|"5555555555"|0x344a8729
+13:53:02.5 (443309433)|STATEMENT_EXECUTE|[111]
+13:53:02.5 (443397216)|VARIABLE_ASSIGNMENT|[111]|this.ContactId|"0033i00003Sk7YAAAZ"|0x344a8729
+13:53:02.5 (443412874)|STATEMENT_EXECUTE|[113]
+13:53:02.5 (443422114)|HEAP_ALLOCATE|[113]|Bytes:16
+13:53:02.5 (443477082)|VARIABLE_ASSIGNMENT|[113]|this.TimeZoneSidKey|"America/New_York"|0x344a8729
+13:53:02.5 (443488543)|STATEMENT_EXECUTE|[114]
+13:53:02.5 (443494402)|HEAP_ALLOCATE|[114]|Bytes:5
+13:53:02.5 (443541475)|VARIABLE_ASSIGNMENT|[114]|this.LocaleSidKey|"en_US"|0x344a8729
+13:53:02.5 (443552978)|STATEMENT_EXECUTE|[115]
+13:53:02.5 (443559701)|HEAP_ALLOCATE|[115]|Bytes:10
+13:53:02.5 (443606169)|VARIABLE_ASSIGNMENT|[115]|this.EmailEncodingKey|"ISO-8859-1"|0x344a8729
+13:53:02.5 (443616598)|STATEMENT_EXECUTE|[116]
+13:53:02.5 (443658327)|VARIABLE_ASSIGNMENT|[116]|this.LanguageLocaleKey|"en_US"|0x344a8729
+13:53:02.5 (443669029)|STATEMENT_EXECUTE|[117]
+13:53:02.5 (443785332)|VARIABLE_ASSIGNMENT|[117]|this.ProfileId|"00e3i0000014w6eAAA"|0x344a8729
+13:53:02.5 (443795310)|STATEMENT_EXECUTE|[120]
+13:53:02.5 (443895712)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (443957144)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (444066938)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (444095870)|HEAP_ALLOCATE|[120]|Bytes:1
+13:53:02.5 (444147329)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (444169496)|HEAP_ALLOCATE|[120]|Bytes:1
+13:53:02.5 (444194469)|HEAP_ALLOCATE|[120]|Bytes:2
+13:53:02.5 (444206671)|VARIABLE_SCOPE_BEGIN|[120]|nickname|String|false|false
+13:53:02.5 (444251492)|VARIABLE_ASSIGNMENT|[120]|nickname|"tt"
+13:53:02.5 (444257213)|STATEMENT_EXECUTE|[122]
+13:53:02.5 (444352515)|HEAP_ALLOCATE|[122]|Bytes:48
+13:53:02.5 (444388027)|SYSTEM_METHOD_ENTRY|[1]|Crypto.Crypto()
+13:53:02.5 (444394799)|STATEMENT_EXECUTE|[1]
+13:53:02.5 (444410545)|SYSTEM_METHOD_EXIT|[1]|Crypto
+13:53:02.5 (444436750)|METHOD_ENTRY|[122]||System.Crypto.getRandomInteger()
+13:53:02.5 (444660781)|METHOD_EXIT|[122]||System.Crypto.getRandomInteger()
+13:53:02.5 (444690032)|HEAP_ALLOCATE|[122]|Bytes:10
+13:53:02.5 (444712976)|HEAP_ALLOCATE|[122]|Bytes:6
+13:53:02.5 (444726527)|HEAP_ALLOCATE|[122]|Bytes:8
+13:53:02.5 (444754388)|VARIABLE_ASSIGNMENT|[122]|nickname|"tt418208"
+13:53:02.5 (444761695)|STATEMENT_EXECUTE|[124]
+13:53:02.5 (444767579)|HEAP_ALLOCATE|[124]|Bytes:17
+13:53:02.5 (444877968)|STATEMENT_EXECUTE|[126]
+13:53:02.5 (444939601)|VARIABLE_ASSIGNMENT|[126]|this.Alias|"tt418208"|0x344a8729
+13:53:02.5 (444959267)|METHOD_ENTRY|[128]||System.Test.isRunningTest()
+13:53:02.5 (444991031)|METHOD_EXIT|[128]||System.Test.isRunningTest()
+13:53:02.5 (444999463)|STATEMENT_EXECUTE|[128]
+13:53:02.5 (445002593)|STATEMENT_EXECUTE|[132]
+13:53:02.5 (445071201)|HEAP_ALLOCATE|[132]|Bytes:34
+13:53:02.5 (445117151)|SYSTEM_METHOD_ENTRY|[1]|Network.Network()
+13:53:02.5 (445127885)|STATEMENT_EXECUTE|[1]
+13:53:02.5 (445145504)|SYSTEM_METHOD_EXIT|[1]|Network
+13:53:02.5 (445192967)|METHOD_ENTRY|[132]||System.Network.getNetworkId()
+13:53:02.5 (445290089)|METHOD_EXIT|[132]||System.Network.getNetworkId()
+13:53:02.5 (445321293)|VARIABLE_SCOPE_BEGIN|[132]|networkId|String|false|false
+13:53:02.5 (445348246)|VARIABLE_ASSIGNMENT|[132]|networkId|null
+13:53:02.5 (445360557)|STATEMENT_EXECUTE|[135]
+13:53:02.5 (445363924)|STATEMENT_EXECUTE|[139]
+13:53:02.5 (445388693)|HEAP_ALLOCATE|[139]|Bytes:18
+13:53:02.5 (445482194)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (445559420)|HEAP_ALLOCATE|[139]|Bytes:162
+13:53:02.5 (445585271)|SYSTEM_METHOD_ENTRY|[1]|Site.Site()
+13:53:02.5 (445591522)|STATEMENT_EXECUTE|[1]
+13:53:02.5 (445602774)|SYSTEM_METHOD_EXIT|[1]|Site
+13:53:02.5 (445634691)|METHOD_ENTRY|[139]||System.Site.createExternalUser(SObject, String, String)
+13:53:02.5 (445809326)|METHOD_EXIT|[139]||System.Site.createExternalUser(SObject, String, String)
+13:53:02.5 (445821767)|VARIABLE_SCOPE_BEGIN|[139]|userId|String|false|false
+13:53:02.5 (445837198)|VARIABLE_ASSIGNMENT|[139]|userId|null
+13:53:02.5 (445945457)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (446007263)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (446048887)|STATEMENT_EXECUTE|[141]
+13:53:02.5 (446052176)|STATEMENT_EXECUTE|[143]
+13:53:02.5 (446141196)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"accountName":"mr test","confirmPassword":"TestPasswaord123!","email":"test24142@test.com","firstname":"test","language":"","lastName":"test","ownerUsername":"reidefford@gmail.com","password":"TestPasswaord123!","phone":"5555555555","profileName":"Customer Community L (9 more) ...","username":"test41421@test.com"}|0x40231c8d
+13:53:02.5 (446185697)|METHOD_ENTRY|[143]||System.Site.login(String, String, String)
+13:53:02.5 (447592720)|METHOD_EXIT|[143]||System.Site.login(String, String, String)
+13:53:02.5 (447633626)|VARIABLE_SCOPE_BEGIN|[143]|lgn|System.PageReference|true|false
+13:53:02.5 (447658229)|VARIABLE_ASSIGNMENT|[143]|lgn|null|
+13:53:02.5 (447665433)|STATEMENT_EXECUTE|[144]
+13:53:02.5 (447772541)|HEAP_ALLOCATE|[144]|Bytes:41
+13:53:02.5 (447827607)|VARIABLE_SCOPE_BEGIN|[150]|ex|Exception|true|false
+13:53:02.5 (449552988)|VARIABLE_ASSIGNMENT|[150]|ex|"common.apex.runtime.impl.ExecutionException: Attempt to de-reference a null object"|0x50da86e0
+13:53:02.5 (449585432)|STATEMENT_EXECUTE|[150]
+13:53:02.5 (449588669)|STATEMENT_EXECUTE|[151]
+13:53:02.5 (449831858)|SAVEPOINT_ROLLBACK|[151]|SavepointValue0
+13:53:02.5 (453269632)|STATEMENT_EXECUTE|[152]
+13:53:02.5 (453377600)|HEAP_ALLOCATE|[152]|Bytes:37
+13:53:02.5 (453425501)|SYSTEM_MODE_EXIT|true
+13:53:02.5 (454375472)|METHOD_EXIT|[62]|01p3i00000Astl6|RegisterCommunityUser.register(RegisterCommunityUser.RegistrationConfig)
+13:53:02.5 (454438290)|VARIABLE_SCOPE_BEGIN|[62]|result|String|false|false
+13:53:02.5 (454481800)|VARIABLE_ASSIGNMENT|[62]|result|"Attempt to de-refere (17 more) ..."
+13:53:02.5 (454492110)|STATEMENT_EXECUTE|[63]
+13:53:02.5 (454580609)|USER_DEBUG|[63]|DEBUG|Attempt to de-reference a null object
+13:53:02.5 (454602249)|STATEMENT_EXECUTE|[64]
+13:53:02.5 (454615857)|HEAP_ALLOCATE|[64]|Bytes:5
+13:53:02.5 (454845182)|EXCEPTION_THROWN|[64]|System.AssertException: Assertion Failed: Expected: true, Actual: false
+13:53:02.5 (455000313)|HEAP_ALLOCATE|[64]|Bytes:51
+13:53:02.5 (455043354)|SYSTEM_MODE_EXIT|false
+13:53:02.5 (455146625)|FATAL_ERROR|System.AssertException: Assertion Failed: Expected: true, Actual: false
+
+Class.RegisterCommunityUserTest.register_Test: line 64, column 1
+13:53:02.5 (455161714)|FATAL_ERROR|System.AssertException: Assertion Failed: Expected: true, Actual: false
+
+Class.RegisterCommunityUserTest.register_Test: line 64, column 1
+13:53:02.455 (455182741)|CUMULATIVE_LIMIT_USAGE
+13:53:02.455 (455182741)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 3 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 4 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 4 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:53:02.455 (455182741)|CUMULATIVE_LIMIT_USAGE_END
+
+13:53:02.5 (455323355)|CODE_UNIT_FINISHED|RegisterCommunityUserTest.register_Test()
+13:53:02.5 (455338452)|EXECUTION_FINISHED
+13:53:02.617 (617708555)|USER_INFO|[EXTERNAL]|0053i000000Ntnz|reidefford@gmail.com|(GMT-04:00) Eastern Daylight Time (America/New_York)|GMT-04:00
+13:53:02.617 (617752688)|EXECUTION_STARTED
+13:53:02.617 (617764503)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+13:53:02.617 (617777184)|DUPLICATE_DETECTION_BEGIN
+13:53:02.617 (617932124)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm3i000001MF2I|DuplicateRuleName:Standard Contact Duplicate Rule|DmlType:INSERT
+13:53:02.617 (638817960)|DUPLICATE_DETECTION_END
+13:53:02.617 (638857059)|CODE_UNIT_FINISHED|DuplicateDetector
+13:53:02.617 (638878506)|EXECUTION_FINISHED
+13:53:02.640 (640694225)|USER_INFO|[EXTERNAL]|0053i000000Ntnz|reidefford@gmail.com|(GMT-04:00) Eastern Daylight Time (America/New_York)|GMT-04:00
+13:53:02.640 (640728395)|EXECUTION_STARTED
+13:53:02.640 (640753916)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+13:53:02.640 (640770209)|DUPLICATE_DETECTION_BEGIN
+13:53:02.640 (640849404)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm3i000001MF2H|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+13:53:02.640 (656575564)|DUPLICATE_DETECTION_END
+13:53:02.640 (656616978)|CODE_UNIT_FINISHED|DuplicateDetector
+13:53:02.640 (656641153)|EXECUTION_FINISHED

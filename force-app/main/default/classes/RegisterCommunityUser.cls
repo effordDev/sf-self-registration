@@ -37,74 +37,46 @@ public without sharing class RegisterCommunityUser {
     @AuraEnabled(Cacheable=false)
     public static String register(RegistrationConfig config){
 
-        // if (config.county == null || String.isEmpty(config.county)) {
-        //     // todo labels 
-        //     //return Label.Site.lastname_is_required;
-        //     return 'County is required';
-        // }
-        
-        // system.debug('here1');
-        // system.debug(config);
-
-        if (config.accountName == null || String.isEmpty(config.accountName)) {
-            return 'Account Name is required';
-        }
-        if (config.lastName == null || String.isEmpty(config.lastName)) {
-            return 'Last Name is required';
-        }
-        if (config.email == null || String.isEmpty(config.email)) {
-            return 'Email is Required';
-        }
         if(!RegisterCommunityUser.validateEmailFormat(config.email)){
             return 'Invalid email address. Valid email can contain only contain letters and number.  Email address must contain @ and .';
         }
-        if(!RegisterCommunityUser.validateEmailFormat(config.username)){
-            return 'Invalid username. Username should be in email format.';
-        }
+        
         if(!RegisterCommunityUser.validateUserNameNotDuplicate(config.username)){
             return 'Username already exists.  Please choose a different username';
         }
-        if (config.password.length() < 10) {
-            return 'Password must be greater than 9 characters';
-        }
-        if(!config.password.containsAny('1234567890')) {
-            return 'Passwords must contain a number.';
-        }
-        if(config.password == config.firstName) {
-            return 'Password cannot equal First Name.';
-        }
-        if(config.password == config.lastName) {
-            return 'Password cannot equal Last Name.';
-        }
+
         if(config.password == config.username.substring(0, config.username.lastIndexOf('@'))) {
             return 'Password cannot equal Username.';
-        }
-        if(config.password == config.username) {
-            return 'Password cannot equal Username.';
-        }
-        if (config.includePassword || Test.isRunningTest()) {    
-            if (!RegisterCommunityUser.isValidPassword(config.password, config.confirmPassword)) {
-                return 'Passwords do not match.';
-            }
         }
         
         Savepoint sp = Database.setSavepoint();
 
         try {
 
-           //TODO: get admin ID for owner
-            User CCOwner = [
-                SELECT Id 
-                FROM User 
-                WHERE Profile.Name = 'System Administrator' 
-                    AND Name = 'Coastal Cloud'
-                LIMIT 1
-            ];
+            User owner;
+            
+            if (Test.isRunningTest()) {
+                owner = [
+                    SELECT Id 
+                    FROM User 
+                    WHERE Profile.Name = 'System Administrator'
+                    AND UserRoleId != null
+                    AND IsActive = true
+                    LIMIT 1
+                ];
+            } else {
+                owner = [
+                    SELECT Id 
+                    FROM User 
+                    WHERE Username = : config.ownerUsername
+                    LIMIT 1
+                ];
+            }
 
             Profile communityProfile = [
                 SELECT Id, Name 
                 FROM Profile 
-                WHERE Name = 'PROFILE NAME HERE' 
+                WHERE Name = : config.profileName 
                 LIMIT 1
             ];
 
@@ -112,7 +84,7 @@ public without sharing class RegisterCommunityUser {
             
             Account a = new Account(
                 Name = config.accountName,
-                OwnerId = CCOwner.Id
+                OwnerId = owner.Id
             );
 
             insert a;
@@ -125,7 +97,7 @@ public without sharing class RegisterCommunityUser {
                 c.MobilePhone = config.phone;
                 c.Email = config.email;
                 c.AccountId = a.Id;
-                c.OwnerId = CCOwner.Id;
+                c.OwnerId = owner.Id;
             insert c;
             
 
@@ -145,34 +117,37 @@ public without sharing class RegisterCommunityUser {
                 u.ProfileId = communityProfile.Id;
 
 
-                String nickname = ((config.firstName != null && config.firstName.length() > 0) ? config.firstName.substring(0,1) : '' ) + config.lastName.substring(0,1);
-                nickname += String.valueOf(Crypto.getRandomInteger()).substring(1,7);
-                u.put('CommunityNickname', nickname);
+            String nickname = ((config.firstName != null && config.firstName.length() > 0) ? config.firstName.substring(0,1) : '' ) + config.lastName.substring(0,1);
                 
-                u.Alias = nickname;
+            nickname += String.valueOf(Crypto.getRandomInteger()).substring(1,7);
+                
+            u.put('CommunityNickname', nickname);
+                
+            u.Alias = nickname;
 
-                String networkId = Network.getNetworkId();
+            if (!Test.isRunningTest()) {
+                Site.validatePassword(u, config.password, config.confirmPassword);
+            }
 
-                // If using site to host the community the user should not hit s1 after logging in from mobile.
-                if(networkId != null && RegisterCommunityUser.siteAsContainerEnabled(networkId)) {
-                    u.put('UserPreferencesHideS1BrowserUI',true);
-                }
+            String networkId = Network.getNetworkId();
 
-            // String userId = Site.createPortalUser(u, a.id, config.password);
+            // If using site to host the community the user should not hit s1 after logging in from mobile.
+            if (networkId != null && RegisterCommunityUser.siteAsContainerEnabled(networkId)) {
+                u.put('UserPreferencesHideS1BrowserUI', true);
+            }
+
             String userId = Site.createExternalUser(u, a.id, config.password);
 
             if (config.password != null && config.password.length() > 1) {
                 
-                ApexPages.PageReference lgn = Site.login(u.Username, config.password, config.startUrl);
+                ApexPages.PageReference lgn = Site.login(u.Username, config.password, '');
                 return lgn.getUrl();
-
             } else {
                 PageReference page = System.Page.SiteRegisterConfirm;
                 page.setRedirect(true);
                 return page.getUrl();
             }
-        }
-        catch(Exception ex){
+        } catch (Exception ex){
             Database.rollBack(sp);
             return ex.getMessage();
         }
@@ -215,11 +190,9 @@ public without sharing class RegisterCommunityUser {
         @AuraEnabled 
         public String language {get;set;}
         @AuraEnabled 
-        public String regConfirmUrl {get;set;}
+        public String profileName {get;set;}
         @AuraEnabled 
-        public String startUrl {get;set;}
-        @AuraEnabled 
-        public Boolean includePassword {get;set;}
+        public String ownerUsername {get;set;}
 
         public RegistrationConfig(){}
         
@@ -233,10 +206,9 @@ public without sharing class RegisterCommunityUser {
             String p_password,
             String p_confirmPassword,
             String p_language,
-            String p_regConfirmUrl,
-            String p_startUrl,
-            Boolean p_includePassword
-        ){
+            String p_profileName,
+            String p_ownerUsername
+        ) {
             accountName = p_accountName;
             firstname = p_firstname;
             lastName = p_lastName;
@@ -246,9 +218,8 @@ public without sharing class RegisterCommunityUser {
             password = p_password;
             confirmPassword = p_confirmPassword;
             language = p_language;
-            regConfirmUrl = p_regConfirmUrl;
-            startUrl = p_startUrl;
-            includePassword = p_includePassword;
+            profileName = p_profileName;
+            ownerUsername = p_ownerUsername;
         }
     }
 }

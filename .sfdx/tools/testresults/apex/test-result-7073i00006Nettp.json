@@ -1,0 +1,118 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 5,
+    "passing": 5,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Thu Jun 08 2023 1:48:25 PM",
+    "testExecutionTimeInMs": 417,
+    "testTotalTimeInMs": 417,
+    "commandTimeInMs": 251,
+    "hostname": "https://reidsdevorg2-dev-ed.my.salesforce.com",
+    "orgId": "00D3i000000F0TEEA0",
+    "username": "reidefford@gmail.com",
+    "testRunId": "7073i00006Nettp",
+    "userId": "0053i000000NtnzAAC"
+  },
+  "tests": [
+    {
+      "id": "07M3i000004zYHQEA2",
+      "queueItemId": "7093i0000001UY2AAM",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7073i00006NettpAAB",
+      "methodName": "register_Test",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3i00000Astl7AAB",
+        "name": "RegisterCommunityUserTest",
+        "namespacePrefix": null,
+        "fullName": "RegisterCommunityUserTest"
+      },
+      "runTime": 257,
+      "testTimestamp": "2023-06-08T17:48:25.000+0000",
+      "fullName": "RegisterCommunityUserTest.register_Test"
+    },
+    {
+      "id": "07M3i000004zYHREA2",
+      "queueItemId": "7093i0000001UY2AAM",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7073i00006NettpAAB",
+      "methodName": "siteAsContainerEnabled_Test",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3i00000Astl7AAB",
+        "name": "RegisterCommunityUserTest",
+        "namespacePrefix": null,
+        "fullName": "RegisterCommunityUserTest"
+      },
+      "runTime": 11,
+      "testTimestamp": "2023-06-08T17:48:25.000+0000",
+      "fullName": "RegisterCommunityUserTest.siteAsContainerEnabled_Test"
+    },
+    {
+      "id": "07M3i000004zYHOEA2",
+      "queueItemId": "7093i0000001UY2AAM",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7073i00006NettpAAB",
+      "methodName": "getPicklistValues_Test",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3i00000Astl7AAB",
+        "name": "RegisterCommunityUserTest",
+        "namespacePrefix": null,
+        "fullName": "RegisterCommunityUserTest"
+      },
+      "runTime": 139,
+      "testTimestamp": "2023-06-08T17:48:25.000+0000",
+      "fullName": "RegisterCommunityUserTest.getPicklistValues_Test"
+    },
+    {
+      "id": "07M3i000004zYHPEA2",
+      "queueItemId": "7093i0000001UY2AAM",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7073i00006NettpAAB",
+      "methodName": "isValidPassword_Test",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3i00000Astl7AAB",
+        "name": "RegisterCommunityUserTest",
+        "namespacePrefix": null,
+        "fullName": "RegisterCommunityUserTest"
+      },
+      "runTime": 4,
+      "testTimestamp": "2023-06-08T17:48:25.000+0000",
+      "fullName": "RegisterCommunityUserTest.isValidPassword_Test"
+    },
+    {
+      "id": "07M3i000004zYHSEA2",
+      "queueItemId": "7093i0000001UY2AAM",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7073i00006NettpAAB",
+      "methodName": "validateEmailFormat_Test",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3i00000Astl7AAB",
+        "name": "RegisterCommunityUserTest",
+        "namespacePrefix": null,
+        "fullName": "RegisterCommunityUserTest"
+      },
+      "runTime": 6,
+      "testTimestamp": "2023-06-08T17:48:25.000+0000",
+      "fullName": "RegisterCommunityUserTest.validateEmailFormat_Test"
+    }
+  ]
+}
