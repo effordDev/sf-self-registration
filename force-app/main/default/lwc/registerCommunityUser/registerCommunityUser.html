@@ -98,14 +98,11 @@
                 </div>
             </div>
 
-            <template if:false={includePasswordField}>
-                <br />
-            </template>
-
             <!-- <template if:true={includePasswordField}> -->
                 
-            <lightning-input 
+            <!-- <lightning-input 
                 required
+                class="password"
                 onchange={setValues}
                 type="password" 
                 name="password" 
@@ -115,12 +112,46 @@
 
             <lightning-input
                 required 
+                class="password"
                 onchange={setValues}
                 type="password" 
                 name="confirmPassword" 
                 placeholder="Confirm Password..."
                 label="Confirm Password"
-            ></lightning-input> 
+            ></lightning-input>  -->
+
+            <lightning-input 
+                required
+                class="password"
+                onchange={setValues}
+                type="password" 
+                name="password" 
+                placeholder="Password..."
+                label="Password"
+            ></lightning-input>
+
+            <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+
+                <lightning-icon 
+                    size="x-small"
+                    class="iconMargin slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default"
+                    icon-name={confirmPasswordIcon}
+                    variant={confirmPasswordIconVariant}
+                ></lightning-icon>
+                
+                <label class="slds-form-element__label">
+                    Confirm Password
+                </label>
+                <lightning-input
+                    class="password"
+                    onchange={setValues}
+                    type="password" 
+                    name="confirmPassword" 
+                    placeholder="Confirm Password..."
+                    variant="label-hidden"
+                ></lightning-input>
+
+            </div>
 
             <u>Passwords must be at least <b>10 characters</b> and include at least <b>one letter</b> and <b>one number</b>.</u>
 

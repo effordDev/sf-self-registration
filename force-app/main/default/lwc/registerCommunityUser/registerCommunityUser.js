@@ -28,6 +28,15 @@ export default class RegisterCommunityUser extends LightningElement {
     get username() {
         return `${this.email}.${this.usernamePostFix}`
     }
+    get passwordIsValidLength() {
+        return this.password.length >= 8
+    }
+    get confirmPasswordIcon() {
+        return this.password === this.confirmPassword  && this.passwordIsValidLength ? 'utility:check' : 'utility:error'
+    }
+    get confirmPasswordIconVariant() {
+        return this.password === this.confirmPassword && this.passwordIsValidLength ? 'success' : 'error'
+    }
 
     onkeyup( event ){
         //check for "enter" key

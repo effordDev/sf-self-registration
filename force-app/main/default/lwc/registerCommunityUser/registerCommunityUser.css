@@ -16,3 +16,10 @@
     color: black; 
     border-color: orange;
 }
+
+.iconMarginError{
+    margin-top: 2px!important;
+}
+.iconMargin{
+    margin-top: 1px!important;
+}
