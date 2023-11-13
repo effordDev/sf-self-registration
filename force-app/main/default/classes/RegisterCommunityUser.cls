@@ -119,7 +119,8 @@ public without sharing class RegisterCommunityUser {
                 
             u.Alias = nickname;
 
-            if (!Test.isRunningTest()) {
+            //validate password if password provided
+            if (config.includePasswordField && !Test.isRunningTest()) {
                 Site.validatePassword(u, config.password, config.confirmPassword);
             }
 
@@ -130,16 +131,15 @@ public without sharing class RegisterCommunityUser {
                 u.put('UserPreferencesHideS1BrowserUI', true);
             }
 
-            String userId = Site.createExternalUser(u, a.id, config.password);
+            String userId = config.includePasswordField ? 
+                Site.createExternalUser(u, a.id, config.password) :
+                Site.createExternalUser(u, a.Id);
 
-            if (config.password != null && config.password.length() > 1) {
-                
+            if (config.includePasswordField) {
                 ApexPages.PageReference lgn = Site.login(u.Username, config.password, '');
                 return lgn.getUrl();
             } else {
-                PageReference page = System.Page.SiteRegisterConfirm;
-                page.setRedirect(true);
-                return page.getUrl();
+                return 'SiteRegisterConfirm';
             }
         } catch (Exception ex){
             Database.rollBack(sp);
@@ -182,8 +182,6 @@ public without sharing class RegisterCommunityUser {
         @AuraEnabled 
         public String confirmPassword {get;set;}
         @AuraEnabled 
-        public String language {get;set;}
-        @AuraEnabled 
         public String profileName {get;set;}
         @AuraEnabled 
         public String ownerUsername {get;set;}
@@ -199,7 +197,6 @@ public without sharing class RegisterCommunityUser {
             String p_username,
             String p_password,
             String p_confirmPassword,
-            String p_language,
             String p_profileName,
             String p_ownerUsername
         ) {
@@ -211,7 +208,6 @@ public without sharing class RegisterCommunityUser {
             username = p_username;
             password = p_password;
             confirmPassword = p_confirmPassword;
-            language = p_language;
             profileName = p_profileName;
             ownerUsername = p_ownerUsername;
         }

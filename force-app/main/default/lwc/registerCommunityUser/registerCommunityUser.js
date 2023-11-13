@@ -13,6 +13,8 @@ export default class RegisterCommunityUser extends LightningElement {
     @api profileName
     @api title
     @api usernamePostFix
+    @api includePasswordField
+    @api siteRegisterConfirmName
 
     accountName = ''
     firstName = ''
@@ -79,16 +81,19 @@ export default class RegisterCommunityUser extends LightningElement {
 
             // console.log({result})
 
-            if(result.substring(0,5) === 'https'){
+            if (result.substring(0,5) === 'https'){
 
                 this.error = false
                 window.location.href = result
+                return
+            } else if (result === 'SiteRegisterConfirm' && this.siteRegisterConfirmName) {
+                const url = window.location.href
+                const slug = url.substring(0, url.indexOf('/s/') + 3)
 
+                window.location.href = slug + this.siteRegisterConfirmName
+                return 
             } else {
-
-                console.log('thrrow error')
                 this.error = result
-
             }
         } catch (error) {
             console.log(error)
@@ -110,7 +115,8 @@ export default class RegisterCommunityUser extends LightningElement {
             confirmPassword: this.confirmPassword,
             language: '',
             profileName: this.profileName,
-            ownerUsername: this.ownerUsername
+            ownerUsername: this.ownerUsername,
+            includePasswordField: this.includePasswordField
         }
     }
 

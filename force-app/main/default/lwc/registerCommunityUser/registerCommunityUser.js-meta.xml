@@ -40,6 +40,18 @@
                 description="Title for card" 
                 default="Register"
             />
+            <property 
+                name="includePasswordField" 
+                type="Boolean" 
+                label="Include Password Fields" 
+                description="Show password fields for registration" 
+            />
+            <property 
+                name="siteRegisterConfirmName" 
+                type="String" 
+                label="Register Confirm Page Name" 
+                description="The page to be redirected to once the user completes registration (Only available for registrations with no password)" 
+            />
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>
