@@ -53,25 +53,19 @@ public without sharing class RegisterCommunityUser {
 
         try {
 
-            User owner;
-            
-            if (Test.isRunningTest()) {
-                owner = [
-                    SELECT Id 
-                    FROM User 
-                    WHERE Profile.Name = 'System Administrator'
-                    AND UserRoleId != null
-                    AND IsActive = true
-                    LIMIT 1
-                ];
-            } else {
-                owner = [
-                    SELECT Id 
-                    FROM User 
-                    WHERE Username = : config.ownerUsername
-                    LIMIT 1
-                ];
-            }
+            User owner = Test.isRunningTest() ? [
+                SELECT Id 
+                FROM User 
+                WHERE Profile.Name = 'System Administrator'
+                AND UserRoleId != null
+                AND IsActive = true
+                LIMIT 1
+            ] : [
+                SELECT Id 
+                FROM User 
+                WHERE Username = : config.ownerUsername
+                LIMIT 1
+            ];
 
             Profile communityProfile = [
                 SELECT Id, Name 
