@@ -8,10 +8,10 @@ public without sharing class RegisterCommunityUser {
         return password == confirmPassword;
     }
     
-    public static boolean siteAsContainerEnabled(Id networkId) {
-        Auth.AuthConfiguration authConfig = new Auth.AuthConfiguration(networkId,'');
-        return authConfig.isCommunityUsingSiteAsContainer();
-    }
+    // public static boolean siteAsContainerEnabled(Id networkId) {
+    //     Auth.AuthConfiguration authConfig = new Auth.AuthConfiguration(networkId,'');
+    //     return authConfig.isCommunityUsingSiteAsContainer();
+    // }
     
     @AuraEnabled(cacheable=true)
     public static String getPicklistValues(String objectName, String fieldName){

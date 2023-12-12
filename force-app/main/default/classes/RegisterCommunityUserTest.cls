@@ -8,11 +8,11 @@ public with sharing class RegisterCommunityUserTest {
     }
     
     @isTest
-    public static void siteAsContainerEnabled_Test(){
-        String networkId = Network.getNetworkId();
-        Boolean valid = RegisterCommunityUser.siteAsContainerEnabled(networkId);
-        System.debug(valid);
-    }
+    // public static void siteAsContainerEnabled_Test(){
+    //     String networkId = Network.getNetworkId();
+    //     Boolean valid = RegisterCommunityUser.siteAsContainerEnabled(networkId);
+    //     System.debug(valid);
+    // }
     
     @isTest
     public static void getPicklistValues_Test(){
