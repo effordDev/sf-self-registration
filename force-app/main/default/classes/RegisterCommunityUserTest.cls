@@ -52,9 +52,9 @@ public with sharing class RegisterCommunityUserTest {
             username,
             password,
             confirmPassword,
-            language,
             profileName,
-            ownerUsername
+            ownerUsername,
+            true
         );  
             
         System.debug(config);

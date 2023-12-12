@@ -185,6 +185,8 @@ public without sharing class RegisterCommunityUser {
         public String profileName {get;set;}
         @AuraEnabled 
         public String ownerUsername {get;set;}
+        @AuraEnabled 
+        public Boolean includePasswordField {get;set;}
 
         public RegistrationConfig(){}
         
@@ -198,7 +200,8 @@ public without sharing class RegisterCommunityUser {
             String p_password,
             String p_confirmPassword,
             String p_profileName,
-            String p_ownerUsername
+            String p_ownerUsername,
+            Boolean p_includePasswordField
         ) {
             accountName = p_accountName;
             firstname = p_firstname;
@@ -210,6 +213,7 @@ public without sharing class RegisterCommunityUser {
             confirmPassword = p_confirmPassword;
             profileName = p_profileName;
             ownerUsername = p_ownerUsername;
+            includePasswordField = p_includePasswordField;
         }
     }
 }
