@@ -127,9 +127,9 @@ public without sharing class RegisterCommunityUser {
             String networkId = Network.getNetworkId();
 
             // If using site to host the community the user should not hit s1 after logging in from mobile.
-            if (networkId != null && RegisterCommunityUser.siteAsContainerEnabled(networkId)) {
-                u.put('UserPreferencesHideS1BrowserUI', true);
-            }
+            // if (networkId != null && RegisterCommunityUser.siteAsContainerEnabled(networkId)) {
+            //     u.put('UserPreferencesHideS1BrowserUI', true);
+            // }
 
             String userId = config.includePasswordField ? 
                 Site.createExternalUser(u, a.id, config.password) :
