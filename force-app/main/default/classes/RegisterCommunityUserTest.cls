@@ -7,7 +7,7 @@ public with sharing class RegisterCommunityUserTest {
         System.debug(valid);
     }
     
-    @isTest
+    // @isTest
     // public static void siteAsContainerEnabled_Test(){
     //     String networkId = Network.getNetworkId();
     //     Boolean valid = RegisterCommunityUser.siteAsContainerEnabled(networkId);
